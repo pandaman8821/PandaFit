@@ -1,0 +1,18 @@
+<p><b>Panda Fit</b> es una app de salud y entrenamiento que te ayuda a moverte más, dormir mejor y entender lo que mide tu pulsera. Tus datos se quedan en tu teléfono.</p>
+
+<p><b>Qué hace</b></p>
+<ul>
+<li>Pasos del día con el podómetro del teléfono o con una pulsera compatible (Bluetooth), con meta, racha y gráfico por horas.</li>
+<li>Sueño (fases, hora de acostarte y levantarte) y resumen semanal con consejos.</li>
+<li>Pulso, tensión y oxígeno en sangre desde la pulsera.</li>
+<li>Entrenamientos con GPS, mapa de OpenStreetMap, pausa automática y entrenador por voz.</li>
+<li>Agua, medallas y retos semanales, widget de pantalla de inicio.</li>
+<li>El tiempo de donde estás (Open-Meteo) con un consejo para entrenar.</li>
+<li>Copia de seguridad, informe PDF para tu médico y conexión con Health Connect.</li>
+<li>Asistente con IA opcional: tú pones tu propia clave de Gemini, OpenAI, DeepSeek o Claude (se guarda cifrada). Sin clave responde un motor local.</li>
+<li>Disponible en español, inglés, portugués, francés, italiano y alemán.</li>
+</ul>
+
+<p><b>Privacidad</b>: esta versión no tiene anuncios, ni rastreadores, ni nube. Al asistente de IA solo se le envían datos agregados y anónimos, y solo si tú añades una clave.</p>
+
+<p><b>Pulseras</b>: probada con pulseras de la familia DaFit/Moyoung (por ejemplo K56 Pro).</p>

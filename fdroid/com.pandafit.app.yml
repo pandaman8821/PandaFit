@@ -1,0 +1,34 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: pandaman8821
+SourceCode: https://github.com/pandaman8821/PandaFit
+IssueTracker: https://github.com/pandaman8821/PandaFit/issues
+Changelog: https://github.com/pandaman8821/PandaFit/releases
+
+AutoName: Panda Fit
+
+RepoType: git
+Repo: https://github.com/pandaman8821/PandaFit.git
+
+AntiFeatures:
+  NonFreeNet:
+    en-US: The optional AI assistant uses the user's own key for Gemini, OpenAI,
+      DeepSeek or Claude, which are non-free network services.
+    es-ES: El asistente de IA opcional usa la clave del propio usuario para Gemini,
+      OpenAI, DeepSeek o Claude, que son servicios de red no libres.
+
+Builds:
+  - versionName: 0.1.8
+    versionCode: 48
+    commit: v0.1.8
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/google-services/d' ../build.gradle.kts build.gradle.kts
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: 0.1.8
+CurrentVersionCode: 48

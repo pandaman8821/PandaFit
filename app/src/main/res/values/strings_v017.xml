@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Panda Fit 0.1.7: textos que antes estaban escritos en el codigo (ESPANOL). -->
+<resources>
+    <!-- Comunes -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_see">Ver</string>
+    <string name="unit_days">días</string>
+    <string name="unit_hours">horas</string>
+    <string name="unit_nights">noches</string>
+    <string name="unit_sessions">sesiones</string>
+    <string name="unit_steps">pasos</string>
+
+    <!-- Actividades -->
+    <string name="act_walk">Caminata</string>
+    <string name="act_run">Carrera</string>
+    <string name="act_bike">Ciclismo</string>
+    <string name="act_strength">Fuerza</string>
+    <string name="act_yoga">Yoga</string>
+
+    <!-- Perfil: estatura -->
+    <string name="profile_height_title">Estatura</string>
+    <string name="profile_height_note">Se usa para calcular tu zancada (distancia por paso) y tu IMC. Se queda en el teléfono.</string>
+    <string name="profile_bmi_line">IMC %1$s · %2$s · zancada %3$d cm</string>
+    <string name="profile_bmi_under">bajo peso</string>
+    <string name="profile_bmi_normal">saludable</string>
+    <string name="profile_bmi_over">sobrepeso</string>
+    <string name="profile_bmi_obese">obesidad</string>
+
+    <!-- Perfil: tus datos -->
+    <string name="data_title">Tus datos</string>
+    <string name="hc_send_title">Enviar a Health Connect</string>
+    <string name="hc_send_sub">Copia tus pasos, sueño y pulso a Health Connect para verlos en otras apps.</string>
+    <string name="hc_send_now">Enviar ahora</string>
+    <string name="hc_sent">Enviados %1$d registros a Health Connect.</string>
+    <string name="hc_nothing">No había datos nuevos que enviar.</string>
+    <string name="hc_no_permission">Falta el permiso de escritura en Health Connect.</string>
+    <string name="hc_unavailable">Health Connect no está disponible en este teléfono.</string>
+    <string name="backup_title">Copia de seguridad</string>
+    <string name="backup_sub">Guarda todos tus datos en un archivo y recupéralos en otro teléfono.</string>
+    <string name="backup_save">Guardar copia</string>
+    <string name="backup_restore">Restaurar copia</string>
+    <string name="backup_saved">Copia guardada.</string>
+    <string name="backup_save_failed">No se pudo guardar la copia: %1$s</string>
+    <string name="backup_restore_q">¿Restaurar la copia?</string>
+    <string name="backup_restore_body">Se reemplazarán los datos actuales de Panda Fit por los de la copia.</string>
+    <string name="backup_restore_failed">No se pudo restaurar la copia.</string>
+    <string name="report_title">Informe para tu médico</string>
+    <string name="report_sub">Crea un PDF con tus últimos 30 días de pasos, sueño, pulso y tensión.</string>
+    <string name="report_create">Crear informe PDF</string>
+    <string name="report_empty">Todavía no hay datos suficientes para el informe.</string>
+    <string name="report_failed">No se pudo crear el informe: %1$s</string>
+
+    <!-- Bienvenida -->
+    <string name="wl_hello">¡Hola! Soy Panda Fit 🐼</string>
+    <string name="wl_intro">Te ayudo a moverte más, dormir mejor y entender lo que mide tu pulsera. Tus datos se quedan en tu teléfono.</string>
+    <string name="wl_about_title">Sobre ti</string>
+    <string name="wl_about_sub">Así calculo mejor tus calorías, tu distancia y tus zonas de pulso.</string>
+    <string name="wl_sex">Sexo</string>
+    <string name="wl_goals_title">Tus metas</string>
+    <string name="wl_goals_sub">Puedes cambiarlas cuando quieras en Perfil.</string>
+    <string name="wl_steps_day">Pasos al día</string>
+    <string name="wl_water">Agua</string>
+    <string name="wl_water_unit">vasos</string>
+    <string name="wl_band_title">Tu pulsera</string>
+    <string name="wl_band_sub">Si tienes una pulsera compatible, la conectamos ahora:</string>
+    <string name="wl_band_1">1. Enciende el Bluetooth y acerca la pulsera.</string>
+    <string name="wl_band_2">2. Toca su pantalla para despertarla.</string>
+    <string name="wl_band_3">3. Cierra la app DaFit si está abierta.</string>
+    <string name="wl_band_4">4. Pulsa «Buscar pulsera» y elígela en la lista.</string>
+    <string name="wl_no_band">¿Sin pulsera? No pasa nada: Panda Fit cuenta tus pasos con el teléfono.</string>
+    <string name="wl_start">Empezar</string>
+    <string name="wl_next">Siguiente</string>
+    <string name="wl_back">Atrás</string>
+    <string name="wl_skip">Saltar</string>
+    <string name="wl_later">Más tarde</string>
+    <string name="wl_find_band">Buscar pulsera</string>
+
+    <!-- Clima -->
+    <string name="wx_city_title">El tiempo para entrenar</string>
+    <string name="wx_tap_to_see">Toca para ver el tiempo de donde estás</string>
+    <string name="wx_searching">Buscando tu ubicación…</string>
+    <string name="wx_see">Ver el tiempo</string>
+    <string name="wx_enable_location">Activa la ubicación para ver el tiempo de donde estás.</string>
+    <string name="wx_feels">Sensación</string>
+    <string name="wx_humidity">Humedad</string>
+    <string name="wx_wind">Viento</string>
+    <string name="wx_rain_chance">Lluvia</string>
+    <string name="wx_max_min">Máx %1$d° · Mín %2$d°</string>
+    <string name="wx_updating">Actualizando…</string>
+    <string name="wx_updated_now">Actualizado ahora</string>
+    <string name="wx_updated_ago">Actualizado hace %1$d min</string>
+    <string name="wx_update_failed">Datos de hace %1$d min (no se pudo actualizar: %2$s)</string>
+    <string name="wx_err_generic">No se pudo obtener el tiempo.</string>
+    <string name="wx_err_permission">Falta el permiso de ubicación.</string>
+    <string name="wx_err_location">No se pudo saber dónde estás. Activa la ubicación del teléfono.</string>
+    <string name="wx_err_service">El servicio del tiempo no respondió. Prueba más tarde.</string>
+    <string name="wx_clear">Despejado</string>
+    <string name="wx_clear_night">Noche despejada</string>
+    <string name="wx_mostly_clear">Casi despejado</string>
+    <string name="wx_partly_cloudy">Parcialmente nublado</string>
+    <string name="wx_cloudy">Nublado</string>
+    <string name="wx_fog">Niebla</string>
+    <string name="wx_drizzle">Llovizna</string>
+    <string name="wx_freezing_drizzle">Llovizna helada</string>
+    <string name="wx_light_rain">Lluvia débil</string>
+    <string name="wx_rain">Lluvia</string>
+    <string name="wx_heavy_rain">Lluvia fuerte</string>
+    <string name="wx_freezing_rain">Lluvia helada</string>
+    <string name="wx_snow">Nieve</string>
+    <string name="wx_showers">Chubascos</string>
+    <string name="wx_snow_showers">Chubascos de nieve</string>
+    <string name="wx_storm">Tormenta</string>
+    <string name="wx_hail_storm">Tormenta con granizo</string>
+    <string name="wx_variable">Variable</string>
+    <string name="wx_tip_storm">Hay tormenta: hoy mejor entrena en casa.</string>
+    <string name="wx_tip_bad">Mal tiempo fuera: buen día para fuerza o yoga en casa.</string>
+    <string name="wx_tip_very_hot">Hace mucho calor: entrena temprano o al atardecer y bebe agua a menudo.</string>
+    <string name="wx_tip_hot">Hace calor: lleva agua y ve a un ritmo cómodo.</string>
+    <string name="wx_tip_uv">Sol muy fuerte (UV %1$d): protector solar y gorra si sales.</string>
+    <string name="wx_tip_wind">Mucho viento: si sales, empieza con el viento de cara.</string>
+    <string name="wx_tip_cold">Hace frío: abrígate por capas y calienta bien antes de correr.</string>
+    <string name="wx_tip_rain_chance">Puede llover (%1$d %%): si sales, que sea pronto.</string>
+    <string name="wx_tip_fog">Hay niebla: si sales, ropa con colores visibles.</string>
+    <string name="wx_tip_good">Buen tiempo para moverse: ¡aprovecha y sal a caminar o correr!</string>
+
+    <!-- Logros -->
+    <string name="ach_title">Logros</string>
+    <string name="ach_card_title">Tus logros</string>
+    <string name="ach_card_sub">%1$d medallas · retos de la semana: %2$d de %3$d</string>
+    <string name="ach_count">%1$d de %2$d medallas</string>
+    <string name="ach_medals">Medallas</string>
+    <string name="ach_week_challenges">Retos de la semana</string>
+    <string name="ach_week_challenges_sub">Se renuevan cada lunes.</string>
+    <string name="ach_next">Próximo reto: %1$s (%2$d %%)</string>
+    <string name="ach_done">¡Conseguido!</string>
+    <string name="ach_earned_on">Conseguida el %1$s</string>
+    <string name="medal_new">¡Medalla nueva: %1$s!</string>
+    <string name="medal_first_day">Primer día</string>
+    <string name="medal_first_day_d">Usaste Panda Fit tu primer día.</string>
+    <string name="medal_goal">Meta cumplida</string>
+    <string name="medal_goal_d">Llegaste a tu meta de pasos un día.</string>
+    <string name="medal_15k">15.000 pasos</string>
+    <string name="medal_15k_d">15.000 pasos en un solo día.</string>
+    <string name="medal_20k">20.000 pasos</string>
+    <string name="medal_20k_d">20.000 pasos en un solo día.</string>
+    <string name="medal_streak3">Racha de 3</string>
+    <string name="medal_streak3_d">3 días seguidos cumpliendo tu meta.</string>
+    <string name="medal_streak7">Racha de 7</string>
+    <string name="medal_streak7_d">7 días seguidos cumpliendo tu meta.</string>
+    <string name="medal_streak30">Racha de 30</string>
+    <string name="medal_streak30_d">30 días seguidos cumpliendo tu meta.</string>
+    <string name="medal_perfect_week">Semana perfecta</string>
+    <string name="medal_perfect_week_d">Meta cumplida los 7 días de una semana.</string>
+    <string name="medal_workout1">Primer entreno</string>
+    <string name="medal_workout1_d">Terminaste tu primer entrenamiento.</string>
+    <string name="medal_workout10">10 entrenos</string>
+    <string name="medal_workout10_d">Llevas 10 entrenamientos.</string>
+    <string name="medal_5k">5 km</string>
+    <string name="medal_5k_d">5 km en un solo entreno.</string>
+    <string name="medal_10k">10 km</string>
+    <string name="medal_10k_d">10 km en un solo entreno.</string>
+    <string name="medal_half">Media maratón</string>
+    <string name="medal_half_d">21 km en un solo entreno.</string>
+    <string name="medal_water">Bien hidratado</string>
+    <string name="medal_water_d">Cumpliste tu meta de agua.</string>
+    <string name="medal_sleep">Gran descanso</string>
+    <string name="medal_sleep_d">Dormiste tu meta de horas.</string>
+    <string name="challenge_steps">Pasos de la semana</string>
+    <string name="challenge_workouts">Entrenos de la semana</string>
+    <string name="challenge_sleep">Noches bien dormidas</string>
+    <string name="challenge_water">Días con meta de agua</string>
+
+    <!-- Sueño de la semana -->
+    <string name="sleep_week_title">Tu sueño esta semana</string>
+    <string name="sleep_week_empty">Aún no hay noches registradas. Conecta tu pulsera y duerme con ella puesta.</string>
+    <string name="sleep_avg">Media</string>
+    <string name="sleep_bedtime">Te acuestas</string>
+    <string name="sleep_waketime">Te levantas</string>
+    <string name="sleep_regular">Regularidad</string>
+    <string name="sleep_deep">Profundo</string>
+    <string name="sleep_light">Ligero</string>
+    <string name="sleep_awake">Despierto</string>
+    <string name="sleep_hm">%1$d h %2$d min</string>
+    <string name="sleep_c_one">Tengo solo una noche registrada: dormiste %1$s.</string>
+    <string name="sleep_c_below">Esta semana duermes de media %1$s, unos %2$d min menos de tu meta.</string>
+    <string name="sleep_c_close">Duermes de media %1$s, muy cerca de tu meta.</string>
+    <string name="sleep_c_ok">Duermes de media %1$s: estás cumpliendo tu meta, ¡bien!</string>
+    <string name="sleep_c_irregular">Tu hora de acostarte cambia bastante; acostarte siempre cerca de las %1$s te ayudaría a descansar mejor.</string>
+    <string name="sleep_c_regular">Además eres muy regular con la hora de acostarte, eso es oro.</string>
+    <string name="sleep_c_deep_low">El sueño profundo es algo bajo (%1$d %%): evita pantallas y cenas pesadas la última hora.</string>
+    <string name="sleep_c_deep_good">Buen porcentaje de sueño profundo (%1$d %%).</string>
+    <string name="sleep_c_last_short">Anoche dormiste menos de lo habitual; hoy mejor un entreno suave.</string>
+    <string name="sleep_m_title">Buenos días 🐼</string>
+    <string name="sleep_m_goal">Anoche dormiste %1$s. ¡Meta cumplida! Hoy puedes darle caña.</string>
+    <string name="sleep_m_close">Anoche dormiste %1$s, cerca de tu meta. Buen día para moverte.</string>
+    <string name="sleep_m_short">Anoche dormiste %1$s, menos de lo que necesitas. Hoy ve suave y acuéstate un poco antes.</string>
+    <string name="sleep_m_regular">Intenta acostarte a la misma hora.</string>
+
+    <!-- Salud / mapa / entreno -->
+    <string name="health_rest_max">Reposo %1$d · Máx %2$d ppm</string>
+    <string name="health_hc_connect">Conectar Health Connect</string>
+    <string name="health_hc_authorize">Dar permisos a Health Connect</string>
+    <string name="health_hc_install">Instalar Health Connect</string>
+    <string name="health_hc_reading">Leyendo datos…</string>
+    <string name="health_hc_reread">Volver a leer datos</string>
+    <string name="health_hc_system">Health Connect viene incluido en tu sistema.</string>
+    <string name="map_waiting_gps">Esperando señal del GPS…</string>
+    <string name="train_voice_coach">Entrenador por voz</string>
+    <string name="train_auto_pause">Pausa automática</string>
+    <string name="train_pause">Pausar</string>
+    <string name="train_resume">Seguir</string>
+    <string name="train_paused">En pausa</string>
+    <string name="train_auto_paused">Pausa automática: muévete para seguir</string>
+
+    <!-- Sincronizacion -->
+    <string name="sync_syncing">Sincronizando…</string>
+    <string name="sync_asking_watch">Pidiendo los datos a la pulsera…</string>
+    <string name="sync_uploading">Subiendo a la nube…</string>
+    <string name="sync_done">Todo sincronizado.</string>
+    <string name="sync_done_queue">Sincronizado (incluidos %1$d envíos pendientes).</string>
+    <string name="sync_later">No se pudo subir ahora; se reintentará solo.</string>
+    <string name="sync_disabled">La sincronización con la nube está desactivada en Perfil.</string>
+    <string name="sync_no_cloud">La nube no está disponible ahora. Tus datos siguen guardados en el teléfono.</string>
+    <string name="sync_hc_no_perm">Faltan permisos de Health Connect.</string>
+
+    <!-- Asistente IA: panel -->
+    <string name="ai_listen">Escuchar</string>
+    <string name="ai_key_save_short">Guardar</string>
+    <string name="ai_key_test">Probar</string>
+    <string name="ai_key_delete_link">Borrar clave</string>
+    <string name="ai_model">Modelo</string>
+    <string name="ai_model_loading">Cargando modelos de tu cuenta…</string>
+    <string name="ai_model_account">Modelos disponibles en tu cuenta</string>
+    <string name="ai_model_need_key">Guarda tu clave para ver los modelos de tu cuenta.</string>
+    <string name="ai_model_suggested">Modelos recomendados</string>
+    <string name="ai_model_in_use">EN USO</string>
+    <string name="ai_model_all">Ver todos (%1$d)</string>
+    <string name="ai_model_less">Ver menos</string>
+    <string name="ai_model_refresh">Actualizar lista</string>
+    <string name="ai_speed">Velocidad de los informes</string>
+    <string name="ai_speed_fast">Rápido</string>
+    <string name="ai_speed_detailed">Detallado</string>
+    <string name="ai_speed_fast_sub">Respuestas más cortas y rápidas.</string>
+    <string name="ai_speed_detailed_sub">El modelo piensa más: tarda más, pero analiza más a fondo.</string>
+    <string name="ai_voice_natural">Voz natural</string>
+    <string name="ai_voice_natural_sub">Solo al pulsar «Escuchar». Usa la voz de tu proveedor de IA (gasta cuota); si falla, habla la voz del teléfono.</string>
+    <string name="ai_voice_male">Masculina</string>
+    <string name="ai_voice_female">Femenina</string>
+    <string name="ai_voice_test">Probar voz</string>
+    <string name="ai_memory">Memoria del panda</string>
+    <string name="ai_memory_empty">Todavía no recuerdo nada de ti.</string>
+    <string name="ai_memory_count">Recuerdo %1$d cosas de ti (solo en este teléfono).</string>
+    <string name="ai_memory_forget">Olvidar todo</string>
+
+    <!-- Asistente IA: mensajes -->
+    <string name="ai_welcome">**Hola, soy tu Asistente IA Fitness de Panda Fit** 🐼\n\nPuedo usar tus datos de hoy (agregados y anónimos) para:\n- Generar un **plan de entrenamiento** a tu medida.\n- Darte **motivación** y recordatorios diarios.\n- Resumir tu **progreso** y avisarte de riesgos.\n- Proponerte un **plan de relajación** si duermes poco.</string>
+    <string name="ai_welcome_key">Proveedor activo: **%1$s** (clave guardada cifrada). Pregúntame lo que quieras.</string>
+    <string name="ai_welcome_nokey">En **Ajustes** puedes elegir entre Gemini, OpenAI, DeepSeek o Claude y pegar tu clave cifrada. Mientras tanto respondo con el motor local.</string>
+    <string name="ai_msg_add_key">Añade tu clave de %1$s en los ajustes del chat para usar la IA.</string>
+    <string name="ai_msg_provider_changed">Ahora uso %1$s.</string>
+    <string name="ai_msg_local_engine">Mientras tanto te respondo con el motor local de Panda Fit.</string>
+    <string name="ai_msg_fallback_model">%1$s no respondió: %2$s Te contesté con %3$s; puedes cambiar de modelo en los ajustes del chat.</string>
+    <string name="ai_msg_wait_limit">Límite por minuto alcanzado: espero %1$d s y lo intento otra vez…</string>
+    <string name="ai_msg_forgot">Listo: he olvidado todo lo que recordaba de ti.</string>
+    <string name="ai_msg_voice_on">Modo voz activado.</string>
+    <string name="ai_msg_key_short">La clave de %1$s parece demasiado corta. Cópiala completa.</string>
+    <string name="ai_msg_key_saved">Clave de %1$s guardada y cifrada.</string>
+    <string name="ai_msg_key_saved_warn">Clave guardada y cifrada (aviso: las de %1$s suelen empezar por \"%2$s\").</string>
+    <string name="ai_msg_key_save_error">No se pudo guardar la clave en este teléfono.</string>
+    <string name="ai_msg_key_encrypt_fail">No se pudo cifrar la clave en este teléfono; no se ha guardado.</string>
+    <string name="ai_msg_key_was_saved">La clave se guardó.</string>
+    <string name="ai_msg_key_verified">Clave de **%1$s** verificada. Modelo activo: **%2$s**. 🐼</string>
+    <string name="ai_msg_key_verify_fail">No se pudo verificar la clave: %1$s</string>
+
+    <!-- Errores de IA y de red -->
+    <string name="err_no_key">Abre Ajustes y pega tu clave del proveedor de IA (se guarda cifrada).</string>
+    <string name="err_bad_key">Tu clave no es válida o fue revocada. Compruébala en Ajustes.</string>
+    <string name="err_no_quota">Tu cuenta no tiene cuota para este modelo (en el plan gratuito puede no estar incluido o se agotó).</string>
+    <string name="err_rate_limit">Llegaste al límite de uso del proveedor por ahora. Espera un poco o elige otro modelo.</string>
+    <string name="err_model_unavailable">Ese modelo no está disponible en tu cuenta.</string>
+    <string name="err_server">El proveedor devolvió un error con este modelo.</string>
+    <string name="err_network">No hay conexión. Te respondo con el motor local de Panda Fit.</string>
+    <string name="err_empty">El proveedor no devolvió respuesta. Prueba a reformular la pregunta.</string>
+    <string name="net_offline">Sin internet ahora mismo: %1$s. Cuando vuelva la conexión lo uso otra vez.</string>
+    <string name="net_blocked">Tu teléfono tiene internet, pero Panda Fit no puede usarlo: %1$s. Revisa en Ajustes &gt; Apps &gt; Panda Fit &gt; Datos móviles / Wi‑Fi que tenga acceso a internet, y que el ahorro de datos, una VPN, un bloqueador de anuncios o el DNS privado no bloqueen Google.</string>
+    <string name="net_slow">La conexión va muy lenta: %1$s. Prueba de nuevo en un momento.</string>
+    <string name="net_quota">Tu cuenta de IA llegó a su límite de uso por ahora (la voz gratuita de Gemini permite pocas lecturas al día): %1$s. Se restablece solo; si quieres, desactiva la voz natural en los ajustes del chat.</string>
+    <string name="net_service">El servicio de IA no respondió bien: %1$s.</string>
+    <string name="net_what_ai">te respondo con el motor local</string>
+    <string name="net_what_voice_cut">la voz natural se cortó</string>
+    <string name="net_what_phone_voice">uso la voz del teléfono</string>
+
+    <!-- Voz -->
+    <string name="voice_limit_minute">Límite de voz por minuto: vuelvo a la voz natural en %1$d s. Mientras, hablo con la voz del teléfono.</string>
+    <string name="voice_limit_day">Se acabó la voz natural gratuita por hoy. Hablo con la voz del teléfono.</string>
+    <string name="voice_need_key">La voz natural necesita una clave de Gemini u OpenAI. Hablo con la voz del teléfono.</string>
+    <string name="voice_test_phrase">Hola, soy tu panda. Así sueno cuando te leo los informes.</string>
+</resources>

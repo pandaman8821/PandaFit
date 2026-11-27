@@ -1,0 +1,3 @@
+* First F-Droid version: no Firebase or Google Play Services.
+* The app is now in Spanish, English, Portuguese, French, Italian and German.
+* Height in Profile: step distance with your real stride, plus BMI.

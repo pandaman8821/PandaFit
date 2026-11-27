@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================================
+   Panda Fit - themes.xml (modo claro, BASE API 26)
+   El tema XML solo pinta la ventana de arranque; TODA la interfaz la dibuja
+   Jetpack Compose con PandaFitTheme (Material 3 + Liquid Glass).
+   No se usa MaterialComponents: el proyecto es 100% Compose.
+
+   Los atributos que existen a partir de API 27/29 se anaden en
+   res/values-v27/themes.xml y res/values-v29/themes.xml para no romper
+   dispositivos antiguos (lint NewApi).
+  ============================================================================
+-->
+<resources>
+    <style name="Theme.PandaFit" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Fondos de arranque: claro con velo azulado -->
+        <item name="android:windowBackground">@color/panda_white</item>
+        <item name="android:colorBackground">@color/panda_white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

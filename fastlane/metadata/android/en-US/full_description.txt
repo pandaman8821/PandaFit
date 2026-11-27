@@ -1,0 +1,18 @@
+<p><b>Panda Fit</b> is a health and workout app that helps you move more, sleep better and understand what your band measures. Your data stays on your phone.</p>
+
+<p><b>What it does</b></p>
+<ul>
+<li>Daily steps from the phone pedometer or a compatible Bluetooth band, with goal, streak and hourly chart.</li>
+<li>Sleep (stages, bedtime and wake-up time) and a weekly summary with tips.</li>
+<li>Heart rate, blood pressure and blood oxygen from the band.</li>
+<li>GPS workouts with an OpenStreetMap map, auto pause and a voice coach.</li>
+<li>Water, medals and weekly challenges, home-screen widget.</li>
+<li>Weather where you are (Open-Meteo) with a training tip.</li>
+<li>Backup, PDF report for your doctor and Health Connect support.</li>
+<li>Optional AI assistant: you bring your own Gemini, OpenAI, DeepSeek or Claude key (stored encrypted). Without a key, a local engine answers.</li>
+<li>Available in Spanish, English, Portuguese, French, Italian and German.</li>
+</ul>
+
+<p><b>Privacy</b>: this version has no ads, no trackers and no cloud. The AI assistant only receives aggregated, anonymous data, and only if you add a key.</p>
+
+<p><b>Bands</b>: tested with DaFit/Moyoung family bands (for example K56 Pro).</p>

@@ -7,6 +7,8 @@ App de fitness para Android con pulsera inteligente (compatible DaFit / Moyoung)
 - Entrenamientos con GPS, mapa, voz del entrenador y pausa automática.
 - Asistente IA "Panda" (Gemini, OpenAI, DeepSeek o Claude con tu propia clave), con memoria y voz natural.
 - Logros, retos semanales, análisis del sueño, informe PDF para el médico, copia de seguridad y Health Connect.
+- En español, inglés, portugués, francés, italiano y alemán (según el idioma del teléfono).
+- Estatura en el perfil: distancia de los pasos con tu zancada real e IMC.
 
 ## Capturas
 
@@ -23,3 +25,25 @@ Las versiones (APK) están en **[Releases](../../releases)**.
 
 ## Privacidad
 Tus datos se guardan en el teléfono. A la IA solo se envían datos agregados y anónimos, y las claves de IA se guardan cifradas en el dispositivo.
+
+## Dos versiones
+| Versión | Qué lleva |
+|---|---|
+| `completa` | La de siempre: nube opcional con Firebase y ubicación de Google Play Services. |
+| `fdroid` | 100 % software libre para F-Droid: sin Firebase ni Google Play Services, sin nube y con la ubicación propia de Android. |
+
+Solo cambia `app/src/<versión>/java/com/pandafit/app/servicios/ServiciosSabor.kt`; el resto del código es común.
+
+## Compilar
+Requiere JDK 17 o superior y el SDK de Android (compileSdk 36).
+
+```
+./gradlew :app:assembleCompletaDebug     # versión completa
+./gradlew :app:assembleFdroidRelease     # versión F-Droid (sin firmar)
+./gradlew :app:testCompletaDebugUnitTest # pruebas
+```
+
+La ficha para F-Droid está en `fastlane/metadata/android` y la receta en `fdroid/com.pandafit.app.yml`.
+
+## Licencia
+[GPL-3.0](LICENSE).

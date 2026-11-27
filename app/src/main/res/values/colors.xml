@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================================
+   Panda Fit - colors.xml
+   Solo los colores que la app usa desde XML (fondos de arranque de la ventana).
+   TODA la paleta de la interfaz vive en Compose (PandaFitTheme.kt), no aqui.
+  ============================================================================
+-->
+<resources>
+    <color name="panda_ink">#FF070B18</color>
+    <color name="panda_white">#FFFFFFFF</color>
+</resources>

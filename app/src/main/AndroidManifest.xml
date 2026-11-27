@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================================
+   Panda Fit - AndroidManifest.xml
+   Target: Android 15 (API 35)
+   Conectividad: BLE estable + GPS preciso + datos en segundo plano + nube.
+  ============================================================================
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ==================== RED / NUBE (Firebase Firestore) ==================== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- ==================== BLUETOOTH (BLE estable) ============================ -->
+    <!-- Android 12+ (API 31+): permisos nuevos sin ubicacion -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"
+        tools:targetApi="s" />
+    <!-- Android 11 y anteriores -->
+    <uses-permission android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+    <!-- ==================== GPS DE ALTA PRECISION ============================= -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Trayecto (GPS) grabando con la pantalla apagada -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"
+        tools:targetApi="34" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"
+        tools:targetApi="34" />
+
+    <!-- ==================== SALUD ============================================= -->
+    <!-- Frecuencia cardiaca en tiempo real durante el entrenamiento -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <!-- Health Connect 1.1: permisos con prefijo android.permission.health.*
+         (tools:ignore evita el aviso "ProtectedPermissions": estos permisos los
+         concede Health Connect en tiempo de ejecucion, no el sistema base). -->
+    <uses-permission android:name="android.permission.health.READ_STEPS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_DISTANCE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_TOTAL_CALORIES_BURNED" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_OXYGEN_SATURATION" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_SLEEP" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.READ_EXERCISE" tools:ignore="ProtectedPermissions" />
+    <!-- Escritura: Panda Fit devuelve a Health Connect lo medido por la banda -->
+    <uses-permission android:name="android.permission.health.WRITE_STEPS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.WRITE_OXYGEN_SATURATION" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.WRITE_SLEEP" tools:ignore="ProtectedPermissions" />
+    <!-- v26: los entrenamientos tambien se envian a Health Connect -->
+    <uses-permission android:name="android.permission.health.WRITE_EXERCISE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.WRITE_DISTANCE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.health.WRITE_ACTIVE_CALORIES_BURNED" tools:ignore="ProtectedPermissions" />
+
+    <!-- ==================== NOTIFICACIONES ==================================== -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Reintento de la sincronizacion pendiente al reiniciar el telefono -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- ==================== HARDWARE (opcional, no bloquea instalacion) ======= -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.heartrate" android:required="false" />
+
+    <!-- Android 11+: permite descubrir por BLE las bandas/relojes de fitness -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".PandaFitApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/panda_data_extraction_rules"
+        android:fullBackupContent="@xml/panda_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="33"
+        android:theme="@style/Theme.PandaFit">
+
+        <!-- El icono de la app se llama "Panda Fit" (title + label).
+             La Activity NO repite android:label: hereda el de la aplicacion
+             (lint RedundantLabel). -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.PandaFit"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Health Connect 1.1: actividad de permisos y de privacidad -->
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Health Connect en Android 14+ (API 34+): sin este alias el sistema
+             NO muestra el dialogo de permisos de salud (la peticion vuelve
+             vacia al instante). -->
+        <activity-alias
+            android:name="ViewPermissionUsageActivity"
+            android:exported="true"
+            android:targetActivity=".MainActivity"
+            android:permission="android.permission.START_VIEW_PERMISSION_USAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Widget de pantalla de inicio (pasos, meta, agua y racha). -->
+        <receiver
+            android:name=".widget.PandaWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_pandafit_info" />
+        </receiver>
+
+        <!-- Compartir resultados: da acceso SOLO a la imagen generada en
+             cache/compartir/ a la app que el usuario elija (permiso temporal). -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.compartir"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/compartir_paths" />
+        </provider>
+
+        <!-- ============ SERVICIO EN SEGUNDO PLANO (BLE + GPS + nube) ============ -->
+        <service
+            android:name=".ble.PandaFitBackgroundService"
+            android:exported="false"
+            android:foregroundServiceType="location|connectedDevice" />
+
+        <!-- ============ Health Connect: reintento de lectura tras reinicio ===== -->
+        <service
+            android:name=".health.PandaFitHealthConnectService"
+            android:exported="true"
+            android:permission="android.permission.BIND_HEALTH_CONNECT_SERVICE">
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_HEALTH_CONNECT_SETTINGS" />
+            </intent-filter>
+        </service>
+
+        <!-- ============ Receivers de conectividad (sincronizacion en nube) ==== -->
+        <!-- BOOT_COMPLETED va por manifiesto (es el unico broadcast implicito
+             permitido); CONNECTIVITY_CHANGE se observa en vivo con
+             ConnectivityManager desde FirebaseHealthViewModel. -->
+        <receiver
+            android:name=".data.SyncAlarmReceiver"
+            android:directBootAware="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Health Connect 1.1: firma la app como cliente de salud -->
+        <meta-data
+            android:name="androidx.health.connect.client.READ_PERMISSIONS"
+            android:value="android.permission.health.READ_STEPS,android.permission.health.READ_DISTANCE,android.permission.health.READ_TOTAL_CALORIES_BURNED,android.permission.health.READ_ACTIVE_CALORIES_BURNED,android.permission.health.READ_HEART_RATE,android.permission.health.READ_OXYGEN_SATURATION,android.permission.health.READ_SLEEP,android.permission.health.READ_EXERCISE" />
+
+    </application>
+</manifest>

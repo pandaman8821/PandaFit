@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Nunca subas tus credenciales de Firebase ni tu API Key de Gemini
+/app/google-services.json
+secretos.properties
+*.keystore
+*.jks
+
+# Salidas de herramientas locales (no son codigo de la app)
+.kotlin/
+graphify-out/

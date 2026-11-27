@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ==========================================================================
+     Panda Fit - backup de datos (Android 11 y anteriores).
+
+     Se excluye "panda_fit_prefs.xml" porque contiene el CRIPTOGRAMA de la
+     API Key de Gemini (cifrada AES-256-GCM con clave del Keystore, que NUNCA
+     se respalda). Asi la credencial no sale del dispositivo.
+     ========================================================================== -->
+<full-backup-content>
+    <exclude domain="sharedpref" path="panda_fit_prefs.xml" />
+    <exclude domain="sharedpref" path="panda_fit_seguro.xml" />
+    <exclude domain="sharedpref" path="panda_fit_seguro_meta.xml" />
+</full-backup-content>

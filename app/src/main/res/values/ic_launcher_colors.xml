@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 0.0.2: fondo del icono "panda musculoso naranja" (sin la pared de ladrillos) -->
+    <color name="ic_launcher_background">#EF5612</color>
+</resources>

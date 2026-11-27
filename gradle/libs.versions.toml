@@ -1,0 +1,66 @@
+# ============================================================================
+#  Panda Fit - Catalogo de versiones (Gradle Version Catalog)
+#  Versiones alineadas a octubre de 2026 y compatibles con el toolchain
+#  instalado (AGP 9.4.1 / Gradle 9.6.0 / JDK 25 / SDK 35-37).
+#
+#  NOTA sobre modelos Gemini: los nombres de modelo caducan. La app NO lleva
+#  ningun nombre de modelo escrito a mano: GeminiAIClient.kt pregunta primero
+#  a la API "ListModels" y usa el modelo vigente en tu cuenta. Si quieres fijar
+#  uno, edita FALLBACK_MODEL en GeminiAIClient.kt.
+# ============================================================================
+[versions]
+agp = "9.4.1"
+
+# --- AndroidX base -----------------------------------------------------------
+coreKtx = "1.16.0"
+lifecycle = "2.9.4"
+activityCompose = "1.11.0"
+navigationCompose = "2.9.5"
+composeBom = "2025.09.00"
+
+# --- Corrutinas / serializacion ---------------------------------------------
+coroutines = "1.10.2"
+kotlinxSerialization = "1.9.0"
+
+
+# --- Salud / ubicacion -------------------------------------------------------
+healthConnect = "1.1.0"
+
+# --- Test --------------------------------------------------------------------
+junit = "4.13.2"
+
+[libraries]
+# --- AndroidX base -----------------------------------------------------------
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+
+# --- Compose (BOM: alinea todas las piezas) ----------------------------------
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+compose-animation = { module = "androidx.compose.animation:animation" }
+
+# --- Corrutinas / serializacion ---------------------------------------------
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+
+# --- Health Connect ----------------------------------------------------------
+health-connect-client = { module = "androidx.health.connect:connect-client", version.ref = "healthConnect" }
+
+
+# --- Test --------------------------------------------------------------------
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version = "2.3.0" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "2.3.0" }

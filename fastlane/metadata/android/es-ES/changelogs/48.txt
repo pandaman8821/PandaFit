@@ -1,0 +1,3 @@
+* Primera versión para F-Droid: sin Firebase ni Google Play Services.
+* La app ya está en español, inglés, portugués, francés, italiano y alemán.
+* Estatura en el Perfil: distancia de los pasos con tu zancada real e IMC.

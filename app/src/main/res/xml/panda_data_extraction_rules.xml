@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ==========================================================================
+     Panda Fit - backup de datos (Android 12+).
+
+     IMPORTANTE (privacidad): se excluye TAMBIEN el archivo de preferencias
+     "panda_fit_prefs.xml", porque ahi vive el CRIPTOGRAMA de la API Key de
+     Gemini y las reglas de exclusión por archivo eran el único punto débil.
+     Al no respaldarlo, el criptograma nunca sale del dispositivo; el usuario
+     solo tendrá que volver a pegar su clave al restaurar en otro telefono
+     (el modelo de amenaza correcto para una credencial privada).
+
+     Las metricas de salud SI se recuperan en cualquier dispositivo porque se
+     sincronizan con tu cuenta anonima de Firestore.
+     ========================================================================== -->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- API Key de Gemini (criptograma v1:...) y ajustes -->
+        <exclude domain="sharedpref" path="panda_fit_prefs.xml" />
+        <!-- Por si en el futuro se separan las credenciales en su propio archivo -->
+        <exclude domain="sharedpref" path="panda_fit_seguro.xml" />
+        <exclude domain="sharedpref" path="panda_fit_seguro_meta.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="panda_fit_prefs.xml" />
+        <exclude domain="sharedpref" path="panda_fit_seguro.xml" />
+        <exclude domain="sharedpref" path="panda_fit_seguro_meta.xml" />
+    </device-transfer>
+</data-extraction-rules>

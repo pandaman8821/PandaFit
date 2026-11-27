@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ==========================================================================
+     Panda Fit - strings.xml (ENGLISH)
+     Traduccion completa de la interfaz. El idioma por defecto del proyecto es
+     el espanol (values/strings.xml); este archivo se usa en dispositivos cuyo
+     idioma es el ingles. Anade mas idiomas creando values-<codigo>/strings.xml.
+     ========================================================================== -->
+<resources>
+    <!-- El nombre de marca NO se traduce: es "Panda Fit" en todos los idiomas -->
+    <string name="app_name">Panda Fit</string>
+    <string name="app_tagline">Your health, clear and simple</string>
+
+    <!-- ======================== NAVEGACION / PANTALLAS ======================== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_training">Train</string>
+    <string name="nav_ai">AI</string>
+    <string name="nav_health">Health</string>
+    <string name="nav_profile">Profile</string>
+    <string name="action_back">Back</string>
+
+    <string name="splash_loading">Waking up your panda\u2026</string>
+
+    <!-- =============================== INICIO ================================= -->
+    <string name="home_status_band_ok">Band OK</string>
+    <string name="home_status_real_data">Real data</string>
+    <string name="home_sample_data">Sample figures: connect your band or Health Connect to see yours.</string>
+    <string name="home_cloud_ready">Cloud ready</string>
+    <string name="home_no_network">No network</string>
+    <string name="home_steps_today">STEPS TODAY</string>
+    <string name="home_goal_label">Goal %1$d</string>
+    <string name="home_steps_unit">steps</string>
+    <string name="home_km_unit">kilometers</string>
+    <string name="home_kcal_unit">active kcal</string>
+    <string name="home_steps_left_unit">steps to goal</string>
+    <string name="home_goal_done">Goal reached. Excellent work \uD83C\uDF89</string>
+    <string name="home_goal_close">Great pace: a short walk closes it.</string>
+    <string name="home_goal_start">Start easy: 10 minutes of walking change the day.</string>
+    <string name="home_score_title">YOUR PANDA SCORE: %1$d/100</string>
+    <string name="home_ask_plan">Ask the assistant for a plan</string>
+    <string name="home_connect">Scan</string>
+    <string name="home_stop_scan">Stop</string>
+    <string name="home_disconnect">Release</string>
+    <string name="home_tap_to_connect">TAP TO CONNECT</string>
+    <string name="home_device_connect">Connect</string>
+    <string name="today_title">Today</string>
+    <string name="today_not_measured">Not measured yet</string>
+    <string name="today_steps">Steps</string>
+    <string name="today_steps_goal">Goal %1$s</string>
+    <string name="today_steps_chart_hint">The hourly chart fills in as you walk.</string>
+    <string name="today_minutes">min</string>
+    <string name="today_sleep">Sleep</string>
+    <string name="today_sleep_goal">Goal %1$d h</string>
+    <string name="today_sleep_no_phases">Connect your band to see your sleep stages.</string>
+    <string name="today_sleep_fell_asleep">Fell asleep</string>
+    <string name="today_sleep_woke_up">Woke up</string>
+    <string name="today_sleep_deep">Deep</string>
+    <string name="today_sleep_light">Light</string>
+    <string name="today_sleep_awake">Awake</string>
+    <string name="today_hr">Heart rate</string>
+    <string name="today_hr_zones">Zones (age %1$d)</string>
+    <string name="today_zone_1">Light</string>
+    <string name="today_zone_2">Fat burn</string>
+    <string name="today_zone_3">Aerobic</string>
+    <string name="today_zone_4">Anaerobic</string>
+    <string name="today_zone_5">Maximum</string>
+    <string name="today_bp">Blood pressure</string>
+    <string name="today_bp_unit">mmHg</string>
+    <string name="today_bp_normal">Normal</string>
+    <string name="today_bp_elevated">Elevated</string>
+    <string name="today_bp_high">High</string>
+    <string name="today_bp_hint">Measure on the watch or tap Measure.</string>
+    <string name="share_button">Share my results</string>
+    <string name="widget_title">Panda Fit · Today</string>
+    <string name="widget_description">Your steps today, goal, water and streak.</string>
+    <string name="widget_goal">of %1$s</string>
+    <string name="widget_water">Water %1$d / %2$d glasses</string>
+    <string name="notif_week_title">Your week in Panda Fit</string>
+    <string name="notif_week_text">Average %1$s steps a day. Goal met %2$d of %3$d days and %4$d workouts.</string>
+    <string name="notif_sleep_title">Bedtime is coming up</string>
+    <string name="notif_sleep_text">Go to bed around %1$s to meet your sleep goal (you usually wake up at %2$s).</string>
+    <string name="training_week_title">This week</string>
+    <string name="training_sessions">sessions</string>
+    <string name="training_history">History</string>
+    <string name="notif_water_title">Time for some water</string>
+    <string name="notif_water_text">%1$d of %2$d glasses so far. A glass now helps you perform better.</string>
+    <string name="water_title">Hydration</string>
+    <string name="water_glass_size">250 ml glasses</string>
+    <string name="water_add">Add a glass</string>
+    <string name="water_remove">Remove a glass</string>
+    <string name="water_done">Water goal reached</string>
+    <string name="profile_weight_title">Weight</string>
+    <string name="profile_weight_note">Only used to estimate your workout kcal. Stays on the phone.</string>
+    <string name="notif_channel_activity">Activity alerts</string>
+    <string name="notif_goal_title">Goal reached! 🎉</string>
+    <string name="notif_goal_text">%1$s steps today. Great job!</string>
+    <string name="notif_move_title">Time to move</string>
+    <string name="notif_move_text">You have been still for a while. Walk 5 minutes and add steps.</string>
+    <string name="profile_reminders">Activity alerts</string>
+    <string name="profile_reminders_sub">Congratulations on your goal, reminders to move and drink water (9:00-21:00) and a bedtime alert.</string>
+    <string name="profile_chip_band_on">Band connected</string>
+    <string name="profile_chip_band_off">No band</string>
+    <string name="profile_body">Your body</string>
+    <string name="profile_age_title">Age</string>
+    <string name="profile_age_unit">years</string>
+    <string name="profile_per_day">per day</string>
+    <string name="profile_hours_night">h per night</string>
+    <string name="profile_key_where">Change the key on the AI screen, settings button. It is stored encrypted on this phone only.</string>
+    <string name="health_last_7_days">Last 7 days</string>
+    <string name="health_goal_days">Goal days</string>
+    <string name="health_score_hint">Based on your steps, sleep, heart rate and oxygen this week.</string>
+    <string name="health_chart_avg_goal">Average %1$s  ·  Goal %2$s</string>
+    <string name="health_sev_high">Attention</string>
+    <string name="health_sev_mid">Heads up</string>
+    <string name="health_sev_ok">Good</string>
+    <string name="ai_settings">AI settings</string>
+    <string name="ai_dictate">Dictate</string>
+    <string name="ai_dictate_prompt">Speak, I\'m listening</string>
+    <string name="ai_dictate_unavailable">This phone has no speech recognition</string>
+    <string name="ai_suggestions_title">Try asking me</string>
+    <string name="training_live">In progress</string>
+    <string name="training_route">Route</string>
+    <string name="training_route_hint">Your route is drawn as you move with GPS on.</string>
+    <string name="training_kcal_note">Estimated kcal based on activity, time and your weight (Profile).</string>
+    <string name="profile_age_note">Only used to calculate your heart-rate zones (220 - age). Stays on the phone.</string>
+    <string name="share_title">Share my results</string>
+    <string name="share_text">%1$s steps today with Panda Fit 🐼 #PandaFit</string>
+    <string name="share_footer">Made with Panda Fit</string>
+    <string name="today_connect_band">Connect band</string>
+    <string name="today_sleep_read_disabled">Sleep is read from the watch every hour from 6:00 to 13:00 until you get up, and kept in Panda Fit, even if the watch shows 0 afterwards.</string>
+    <string name="today_measure_hr">Measure heart rate</string>
+    <string name="today_measure_bp">Measure blood pressure</string>
+    <string name="today_measure_spo2">Measure oxygen</string>
+    <string name="today_spo2">Blood oxygen</string>
+    <string name="today_spo2_range">Normal 95-100%</string>
+    <string name="today_hr_day">Heart rate today</string>
+    <string name="today_hr_day_avg">Average</string>
+    <string name="today_hr_day_hint">The curve appears once your band measures your pulse.</string>
+    <string name="today_exercise">Exercise records</string>
+    <string name="today_exercise_sub">View and start workouts</string>
+    <string name="ble_diag_copy">Copy</string>
+    <string name="ble_diag_share">Share</string>
+    <string name="ble_diag_copied">Diagnostics copied</string>
+    <string name="home_battery_unit">battery</string>
+    <string name="home_ble_wake_hint">Bring the band close and tap its screen to wake it. Close the DaFit app if it is open.</string>
+    <string name="home_ble_connected">Band connected</string>
+    <string name="home_ble_scanning">Scanning for bands\u2026</string>
+    <string name="home_ble_connecting">Connecting\u2026</string>
+    <string name="home_ble_reconnecting">Reconnecting\u2026</string>
+    <string name="home_ble_error">Bluetooth unavailable</string>
+    <string name="home_ble_disconnected">No band connected</string>
+    <string name="home_ble_hint">Heart rate and oxygen live</string>
+    <string name="home_hc_connected">Real health data active</string>
+    <string name="home_hc_available">Connect your real data (steps, sleep, heart rate)</string>
+    <string name="home_hc_unavailable">Not available on this device</string>
+    <string name="home_hc_connect">Connect</string>
+    <string name="home_hc_active">Active</string>
+
+    <string name="metric_steps">Steps</string>
+    <string name="metric_sleep">Sleep</string>
+    <string name="metric_heart_rate">Heart rate</string>
+    <string name="metric_spo2">Oxygen</string>
+    <string name="metric_hours">hours</string>
+    <string name="metric_ppm">bpm</string>
+
+    <string name="action_ai_assistant">AI Fitness Assistant</string>
+    <string name="action_ai_assistant_sub">Plans, progress and voice with your real data</string>
+    <string name="action_sync_now">Sync</string>
+
+    <!-- ============================ ENTRENAMIENTO ============================= -->
+    <string name="training_title">Workout</string>
+    <string name="training_what_today">What are you doing today</string>
+    <string name="training_ready">Ready to start</string>
+    <string name="training_start">Start</string>
+    <string name="training_stop">Finish</string>
+    <string name="training_gps_waiting">Waiting for GPS\u2026</string>
+    <string name="training_last_session">LAST SESSION</string>
+    <string name="training_duration">Duration</string>
+    <string name="training_saved_note">Saved on your phone and synced to Firebase.</string>
+    <string name="training_background_note">The background service keeps measuring even with the screen off.</string>
+
+    <!-- ============================ BLE / CONEXION =========================== -->
+
+    <!-- ============================ HEALTH CONNECT =========================== -->
+    <string name="hc_title">Health Connect</string>
+
+    <!-- ================================ SALUD ================================ -->
+    <string name="health_week">Last 7 days</string>
+    <string name="health_steps_by_day">STEPS PER DAY</string>
+    <string name="health_sleep_by_night">SLEEP PER NIGHT (h)</string>
+    <string name="health_resting_hr_chart">RESTING HEART RATE (bpm)</string>
+    <string name="health_week_summary">WEEK SUMMARY</string>
+    <string name="health_avg_steps">Average steps</string>
+    <string name="health_avg_sleep">Average sleep</string>
+    <string name="health_avg_spo2">Average SpO2</string>
+    <string name="health_score">Panda score</string>
+    <string name="health_smart_analysis">Smart analysis</string>
+    <string name="health_today_label">today</string>
+    <string name="health_privacy_note">Health data is analyzed on your phone. Only aggregated figures are synced to your anonymous Firebase account.</string>
+
+    <!-- ============================ ASISTENTE IA ============================= -->
+    <string name="ai_title">AI Fitness Assistant</string>
+    <string name="ai_api_key_save">Save encrypted</string>
+    <string name="ai_validate">Test AI connection</string>
+    <string name="ai_delete_key">Delete</string>
+    <string name="ai_close">close</string>
+    <string name="ai_privacy_body">Only aggregated and anonymous data is sent (steps, sleep, heart rate, calories). Your name, email, phone, exact location and identifiers are never sent.</string>
+    <string name="ai_thinking">Thinking\u2026</string>
+    <string name="ai_local_engine">Local engine (nothing sent)</string>
+    <string name="ai_no_key_short">No AI API key</string>
+    <string name="ai_chip_plan">Generate my workout plan</string>
+    <string name="ai_chip_progress">My progress summary</string>
+    <string name="ai_chip_motivation">Motivate me today</string>
+    <string name="ai_chip_sleep">Improve my sleep</string>
+    <string name="ai_chip_nutrition">Meal ideas</string>
+    <string name="ai_chip_heart">How is my heart doing</string>
+    <string name="ai_show_context">Show context</string>
+    <string name="ai_hide_context">Hide context</string>
+    <string name="ai_context_title">AGGREGATED DATA GEMINI WOULD SEE</string>
+    <string name="ai_input_hint">Type your question for the assistant\u2026</string>
+    <string name="ai_typing">typing\u2026</string>
+    <string name="ai_thinking_body">Analyzing your aggregated data\u2026</string>
+    <string name="ai_clear_chat">Clear conversation</string>
+    <string name="ai_from_panda">Panda AI</string>
+    <string name="ai_plan_gemini">Generated by the AI from your aggregated data</string>
+    <string name="ai_plan_local">Generated by the local Panda Fit engine</string>
+    <string name="ai_voice_toggle_on">Enable voice mode</string>
+    <string name="ai_voice_toggle_off">Disable voice mode</string>
+    <string name="ai_key_responsibility">You are responsible for your AI provider account; the provider runs the service. Panda Fit does not store keys from other AI providers.</string>
+
+    <!-- =============================== PERFIL ================================ -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_mode_hint">Adjusts calorie, distance and goal calculations.</string>
+    <string name="profile_mode_man">Man</string>
+    <string name="profile_mode_woman">Woman</string>
+    <string name="profile_goals">Your goals</string>
+    <string name="profile_data_cloud">Data and cloud</string>
+    <string name="profile_cloud">Cloud sync</string>
+    <string name="profile_cloud_sub">Firestore stores your figures even if Bluetooth drops</string>
+    <string name="profile_ai_privacy">AI assistant and privacy</string>
+    <string name="profile_api_key_none">not configured</string>
+    <string name="profile_model_auto">auto-detected</string>
+    <string name="profile_delete_key">Delete key</string>
+    <string name="profile_connections">CONNECTION STATUS</string>
+    <string name="profile_conn_ble">BLE band</string>
+    <string name="profile_conn_hc">Health Connect</string>
+    <string name="profile_conn_net">Internet</string>
+    <string name="profile_conn_gps">GPS</string>
+    <string name="profile_state_authorized">authorized</string>
+    <string name="profile_state_available">available</string>
+    <string name="profile_state_unavailable">not available</string>
+    <string name="profile_state_connected">connected</string>
+    <string name="profile_state_no_network">no network</string>
+    <string name="profile_state_active">active</string>
+    <string name="profile_state_waiting">waiting</string>
+    <string name="profile_health_score">Today\'s score: %1$d/100</string>
+    <string name="profile_sync_now">Sync now</string>
+
+    <!-- ============================ NOTIFICACIONES =========================== -->
+    <string name="channel_ai_name">AI Assistant</string>
+    <string name="channel_ai_desc">Assistant tips and reminders</string>
+    <string name="channel_background_name">Panda Fit in the background</string>
+    <string name="channel_background_desc">Keeps the band, GPS and cloud in sync</string>
+    <string name="notif_service_title">Panda Fit active</string>
+    <string name="notif_service_text">Syncing band, GPS and cloud</string>
+
+    <!-- ============================ ACCESIBILIDAD ============================ -->
+    <string name="cd_listen_answer">Listen to this answer</string>
+    <string name="cd_send">Send</string>
+    <!-- ============================== PLURALES =============================== -->
+    <plurals name="home_streak">
+        <item quantity="one">%1$d-day streak</item>
+        <item quantity="other">%1$d-day streak</item>
+    </plurals>
+    <plurals name="home_ble_devices_near">
+        <item quantity="one">%1$d device nearby</item>
+        <item quantity="other">%1$d devices nearby</item>
+    </plurals>
+    <plurals name="ai_plan_summary">
+        <item quantity="one">%1$d day/week \u2022 %2$d min \u2022 %3$s level</item>
+        <item quantity="other">%1$d days/week \u2022 %2$d min \u2022 %3$s level</item>
+    </plurals>
+    <plurals name="notif_workout_text">
+        <item quantity="one">Training \u2022 %1$d step \u2022 %2$d bpm \u2022 SpO2 %3$d%%</item>
+        <item quantity="other">Training \u2022 %1$d steps \u2022 %2$d bpm \u2022 SpO2 %3$d%%</item>
+    </plurals>    <!-- ===================== PROVEEDORES DE IA (multi-proveedor) ============== -->
+    <string name="provider_gemini">Google Gemini</string>
+    <string name="provider_openai">OpenAI (ChatGPT)</string>
+    <string name="provider_deepseek">DeepSeek</string>
+    <string name="provider_claude">Anthropic Claude</string>
+    <string name="ai_provider_title">AI provider</string>
+    <string name="ai_provider_hint">Choose the service you want to use. Each one keeps its own encrypted key.</string>
+    <string name="ai_provider_active">Active provider</string>
+    <string name="ai_key_where">Get your %1$s key at: %2$s</string>
+    <string name="ai_key_stored">Stored and encrypted: %1$s</string>
+    <string name="ai_key_none_provider">No key stored for %1$s</string>
+    <string name="band_sync">Sync band</string>
+    <string name="ble_log_title">LAST MESSAGES FROM THE BAND</string>
+    <string name="ble_diag">BLE diagnostics</string>
+</resources>
